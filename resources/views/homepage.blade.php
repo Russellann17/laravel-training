@@ -1,6 +1,9 @@
-@extends('layouts.welcome')
-@section('body')
-<form>
+@extends('layouts.app')
+@section('content')
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+    <form class="m-auto" style="width:70%">
   <div class="form-group">
     <label for="exampleInputEmail1">Id:</label>
     <input type="email" class="form-control" id="id" aria-describedby="emailHelp" placeholder="Enter Id">
@@ -36,5 +39,10 @@
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Updated At">
   </div>
   <button type="submit" class="btn btn-primary">Create</button>
+  
 </form>
+    </div>
+  </div>
+
+</div>
 @endsection
